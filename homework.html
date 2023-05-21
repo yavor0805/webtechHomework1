@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Issue Tracker</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="logo.png" alt="Logo" style="float:left; height: 80px; width: 90px;">
+		<h1 style="margin-left: 60px;">Issue Tracker</h1>
+	  </header>	  
+	<main>
+		<button id="create-issue-button">Create Ticket</button>
+		<form id="new-issue-form" style="display:none;">
+			<label for="title-input">Title:</label>
+			<input type="text" id="title-input" name="title-input" required>
+			<label for="description-input">Description:</label>
+			<textarea id="description-input" name="description-input" required></textarea>
+			<label for="assign-select">Assign:</label>
+			<select id="assign-select" name="assign-select">
+				<option value="Yavor">Yavor</option>
+				<option value="Alkan">Alkan</option>
+				<option value="Daniel">Daniel</option>
+				<option value="Slavi">Slavi</option>
+			</select>
+			<label for="priority-select">Priority:</label>
+			<select id="priority-select" name="priority-select">
+				<option value="high">High</option>
+				<option value="medium" selected>Medium</option>
+				<option value="low">Low</option>
+			</select>
+			<label for="status-select">Status:</label>
+			<select id="status-select" name="status-select">
+				<option value="open" selected>Open</option>
+				<option value="closed">Closed</option>
+				<option value="in-progress">In Progress</option>
+			</select>
+			<div>
+				<button type="submit">Create</button>
+				<button type="button" id="cancel-button">Cancel</button>
+			</div>
+		</form>
+		<div id="issue-list">
+			<!-- Issue elements will be dynamically created here -->
+		</div>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  background-color: #f6f6f6;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  font-size: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 9.375rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #6d6d6d;
+  color: #fff;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+.issue {
+  border: 0.0625rem solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3125rem;
+}
+
+.high {
+  border-color: #dc3545;
+}
+
+.medium {
+  border-color: #ffc107;
+}
+
+.low {
+  border-color: #28a745;
+}
